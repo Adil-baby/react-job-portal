@@ -1,99 +1,75 @@
-<!-- # Job Portal App with MERN Stack
-
-A comprehensive job portal application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. This application allows users to browse job listings, apply for jobs, and manage their applications seamlessly.
-
-## Features
-
-- **User Authentication:** Secure authentication using JWT (JSON Web Tokens) for both job seekers and employers.
-- **Job Listings:** Browse through a wide range of job listings fetched from MongoDB.
-- **Application Management:** Job seekers can manage their job applications, and employers can view and manage received applications.
-- **Responsive Design:** Ensures a seamless experience across all devices.
-
-## Technologies Used
-
-- **Frontend:** React.js, React Router, Bootstrap
-- **Backend:** Node.js, Express.js, MongoDB
-- **Authentication:** JWT (JSON Web Tokens), Bcrypt (for password hash)
-- **Image Upload:** Cloudinary for storing and managing uploaded images
-- **Deployment:** Vercel (frontend), Render(backend), MongoDB Atlas (database)
-
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-- Node.js installed on your machine with latest version or v22.2.0 above
-- MongoDB Atlas account (or local MongoDB server)
-- Cloudinary account for image storage
-
-### Installation
-
-1. Clone the repo:
-   ```sh
-   git clone https://github.com/exclusiveabhi/react-job-portal.git
-   ```
-2. Install NPM packages:
-   ```sh
-   cd react-job-portal
-   cd backend
-   npm install
-   cd..
-   cd frontend
-   npm install
-   ```
-3. Set up environment variables:
-   - Create a `config.env` file after creating a `config folder` in the backend directory, containing the following variables:
-   ```env
-   PORT=
-   CLOUDINARY_API_KEY=
-   CLOUDINARY_API_SECRET=
-   CLOUDINARY_CLOUD_NAME=
-   FRONTEND_URL=
-   DB_URL=
-   JWT_SECRET_KEY=
-   JWT_EXPIRE=
-   COOKIE_EXPIRE=
-   ```
-
-   Replace each value with your specific configuration details.
-
-4. Run the application:
-   ```sh
-   npm run dev
-   ```
-5. Open your browser and navigate to `http://localhost:5173` to view the app.
-
-## Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request (`we will merge within 24 hour`)
-
-## Please give a star to the repository if you like it.
-
-## Contact
-
-Abhishek Rajput - [GitHub](https://github.com/exclusiveabhi)
-
-Project Link: [https://github.com/exclusiveabhi/react-job-portal.git](https://github.com/exclusiveabhi/react-job-portal.git) -->
 # React Job Portal
 
 A full-stack job portal application built with MERN stack.
 
 ## Features
-- User authentication (Job Seekers & Employers)
-- Job posting and management
-- Job applications with resume upload
-- Search and filter jobs
-- Real-time application tracking
+- User Authentication (Job Seekers & Employers)
+- Job Posting and Management
+- Resume Upload with Cloudinary
+- Advanced Job Search and Filtering
+- Real-time Application Tracking
+- Role-based Access Control
+- Responsive Design
 
 ## Tech Stack
-- Frontend: React.js
-- Backend: Node.js, Express.js
-- Database: MongoDB
-- File Storage: Cloudinary
+
+### Frontend
+- React.js with Vite
+- React Router v6
+- Axios for API calls
+- React Icons
+- React Hot Toast
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- JWT Authentication
+- Cloudinary Integration
+
+## Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/Adil-baby/react-job-portal.git
+cd react-job-portal
+```
+
+2. Install Dependencies
+```bash
+# Backend dependencies
+cd backend
+npm install
+
+# Frontend dependencies
+cd ../frontend
+npm install
+```
+
+3. Environment Setup
+Create `.env` file in backend directory:
+```env
+PORT=4000
+CLOUDINARY_CLIENT_NAME=your_cloudinary_name
+CLOUDINARY_CLIENT_API=your_api_key
+CLOUDINARY_CLIENT_SECRET=your_secret
+FRONTEND_URL=http://localhost:5173
+DB_URL=your_mongodb_url
+JWT_SECRET_KEY=your_jwt_secret
+JWT_EXPIRE=7d
+COOKIE_EXPIRE=7
+```
+
+4. Start Development Servers
+```bash
+# Start backend
+cd backend
+npm run dev
+
+# Start frontend (new terminal)
+cd frontend
+npm run dev
+```
+
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
